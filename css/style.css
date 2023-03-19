@@ -29,16 +29,21 @@ body {
     
 }
 
+
+
 .nav {
     list-style-type: none;
     display: flex;
     justify-content: center;
     margin-top: -5.5%;
     width: 15%;
+    
 }
 
 li {
     margin-right: 15%;
+    cursor: pointer;
+    font-size: 1.1rem;
 }
 
 .download {
@@ -57,7 +62,7 @@ li {
 .circle {
     display:flex;
     border: 1px solid #0DB760;
-    width: 8%;
+    width: 0.01px;
     justify-content: center;
     border-radius: 100%;
     margin-top:20%;
@@ -68,12 +73,20 @@ li {
 .f {
     color:#0DB760;
     font-family: 'Poppins', sans-serif;
+    font-size: 0.01px;
+}
+
+.link {
+    text-decoration:none;
+    color:black;
+    margin-right: 15%;
+    font-size: 1rem;
 }
 
 .head {
     color:#000000;
     margin-left: 5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 span {
@@ -114,7 +127,7 @@ span {
 
 .para1 {
     color: #878686;
-    font-family: 'Shantell Sans', cursive;
+    font-family: 'Poppins', sans-serif;
     margin-top: -12%;
     margin-left: 5%;
 }
@@ -162,3 +175,141 @@ button:hover{
     cursor: pointer;
 }
 
+.headsk{
+    color: black;
+    font-family: 'Shantell Sans', cursive;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+.cards{
+    margin-left: 19rem;
+    margin-top: -10rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card1 {
+    width: 15rem;
+    border: 2px solid #0DB760;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    font-family: 'Shantell Sans', cursive;
+    color:#878686;
+}
+
+.card-stats {
+    font-size: 1.3rem;
+    margin-top: 3%;
+    margin-left: 4rem;
+    color: rgb(216, 75, 5);
+}
+
+
+.card2 {
+    width: 15rem;
+    border: 2px solid #0DB760;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    font-family: 'Shantell Sans', cursive;
+    color:#878686;
+}
+
+.card1-stats {
+    font-size: 1.3rem;
+    margin-top: 3%;
+    margin-left: 1rem;
+    color: rgb(216, 75, 5);
+}
+
+.card3 {
+    width: 15rem;
+    border: 2px solid #0DB760;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    font-family: 'Shantell Sans', cursive;
+    color:#878686;
+}
+
+.card-stats {
+    font-size: 1.3rem;
+    margin-top: 3%;
+    margin-left: 1rem;
+    color: rgb(216, 75, 5);
+}
+
+.headco {
+    color: #0DB760;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#emailid {
+    text-align: center;
+    margin-left: 32rem;
+    margin-top: 2rem;
+    border: 2px solid #0DB760;
+    width: 15rem;
+    font-size: 1rem;
+    font-family: 'Shantell Sans', cursive;
+    border-radius: 5rem;
+}
+
+#msg {
+    text-align: center;
+    border: 2px solid #0DB760;
+    font-family: 'Shantell Sans', cursive;
+    border-radius: 5rem;
+    margin-left: 25rem;
+    margin-top: 3rem;
+    width: 30rem;
+    height: 15rem;
+    font-size: 1.3rem;
+}
+
+#btns {
+    background-color: #0DB760;
+    padding: 1% 1% 1% 1% ;
+    border-radius: 10%;
+    border: none;
+    margin-right: 2%;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin-left: 55rem;
+    cursor: pointer;
+}
+.headawa {
+    color: #0DB760;
+    font-size: 2rem;
+    text-align: center;
+}
