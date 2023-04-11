@@ -44,6 +44,7 @@ li {
     margin-right: 15%;
     cursor: pointer;
     font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .download {
@@ -165,6 +166,19 @@ span {
     color: #000000;
     font-family: 'Open Sans', sans-serif;
 }
+#btn3 {
+    
+  position: relative;
+  top:50%;
+  left:46%;
+  background-color: #0DB760;
+  padding: 1% 1% 1% 1% ;
+  border-radius: 10%;
+  border: none;
+  margin-right: 2%;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+}
 
 a {
     text-decoration: none;
@@ -182,91 +196,148 @@ button:hover{
     margin-top: 5rem;
 }
 
-.cards{
-    margin-left: 19rem;
-    margin-top: -10rem;
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400&display=swap');
+
+
+.card{
+    width: 300px;
+    height: 425px;
+    margin-left:25%;
+    margin-top:-10%;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid #0DB760;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transition: all 0.6s ease;
+}
+.card-1{
+    width: 300px;
+    height: 425px;
+    margin-left:55%;
+    margin-top:-34.5%;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid #0DB760;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transition: all 0.6s ease;
+}
+
+.card:hover{
+    box-shadow: #0DB760 -10px 10px, #0DB760 -20px 20px ;
+}
+.card-1:hover{
+    box-shadow: #0DB760 -10px 10px, #0DB760 -20px 20px ;
+}
+
+
+.card .img{
+    height: 40%;
+    background: url("../images/quantum.png");
+    background-size: contain;
+}
+.card-1 .img-1{
+    height: 40%;
+    background: url("../images/advent.png");
+    background-size: contain;
+}
+
+
+.card .content{
     display: flex;
-    gap: 0.5rem;
+    flex-direction: column;
+    padding: 20px;
+    font-weight: 300;
+}
+.card-1 .content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-weight: 300;
 }
 
-.card1 {
-    width: 15rem;
-    border: 2px solid #0DB760;
-    border-radius: 3rem;
-    padding: 1rem;
+.card .content h3{
+    width: 200px;
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #FFAC1C;
+}
+.card-1 .content h3{
+    width: 200px;
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #FFAC1C;
 }
 
-.card-title {
+.card .content p{
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.card-1 .content p{
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.card .content a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.card-1 .content a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.card .content button{
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 100;
+    font-size: 20px;
+    color: #FFAC1C;
+    width: 100%;
+    height: 45px;
     text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffac1c26;
+    transition: 0.2s ease-in-out;
 }
-
-.card-text {
-    font-size: 1.2rem;
-    font-family: 'Shantell Sans', cursive;
-    color:#878686;
-}
-
-.card-stats {
-    font-size: 1.3rem;
-    margin-top: 3%;
-    margin-left: 4rem;
-    color: rgb(216, 75, 5);
-}
-
-
-.card2 {
-    width: 15rem;
-    border: 2px solid #0DB760;
-    border-radius: 3rem;
-    padding: 1rem;
-}
-
-.card-title {
+.card-1 .content button{
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 100;
+    font-size: 20px;
+    color: #FFAC1C;
+    width: 100%;
+    height: 45px;
     text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffac1c26;
+    transition: 0.2s ease-in-out;
 }
 
-.card-text {
-    font-size: 1.2rem;
-    font-family: 'Shantell Sans', cursive;
-    color:#878686;
+.card .content button:hover{
+    background-color: #ffac1c3f;
+    cursor: pointer;
+}
+.card-1 .content button:hover{
+    background-color: #ffac1c3f;
+    cursor: pointer;
 }
 
-.card1-stats {
-    font-size: 1.3rem;
-    margin-top: 3%;
-    margin-left: 1rem;
-    color: rgb(216, 75, 5);
-}
 
-.card3 {
-    width: 15rem;
-    border: 2px solid #0DB760;
-    border-radius: 3rem;
-    padding: 1rem;
-}
-
-.card-title {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.card-text {
-    font-size: 1.2rem;
-    font-family: 'Shantell Sans', cursive;
-    color:#878686;
-}
-
-.card-stats {
-    font-size: 1.3rem;
-    margin-top: 3%;
-    margin-left: 1rem;
-    color: rgb(216, 75, 5);
-}
 
 .headco {
     color: #0DB760;
@@ -312,4 +383,5 @@ button:hover{
     color: #0DB760;
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 5%;
 }
