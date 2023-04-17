@@ -32,6 +32,7 @@ li {
 	font-family: 'Roboto', sans-serif; 
 }
 
+
 .nav-btn {
 	background-color: transparent;
 	color: #000;
@@ -59,6 +60,7 @@ li {
 	color: black;
 }
 
+/*Home*/
 
 .head {
 	font-family: 'Montserrat', sans-serif;
@@ -72,6 +74,8 @@ li {
 
 }
 
+/*About*/
+
 #About {
 	background: #000;
 
@@ -82,10 +86,45 @@ li {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: white;
+	
+
 }
 
-.FAQS {
+.fp-noscroll {
+    justify-content: flex-start;
+    overflow: hidden;
+}
 
+.about {
+	color: white;
+	font-family: 'Comfortaa', cursive;
+	margin-top: 3%;
+	text-align: center;
+}
+
+.btn {
+	text-align: center;
+	margin-left: 46%;
+	margin-top: 3%;
+	padding: 1% 1% 1% 1%;
+	background: transparent;
+	color: white;
+	border: 2px solid rgb(18,220,226);
+	border-radius: 5px 5px ;
+	transition: 500ms ease-in-out;
+}
+
+.btn:hover {
+	background: rgb(18,220,226);
+	color: black;
+
+}
+
+
+
+#FAQS {
+	background: #59DFF3;
+	
 }
 
 
