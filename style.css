@@ -17,7 +17,7 @@ font-family: 'Roboto', sans-serif; */
 	color: black;
 
 }
-.link1 {
+.fix {
  	text-decoration: none;
 	color: white;
 }
@@ -51,7 +51,7 @@ ul {
 	position: fixed;
 	z-index: 70;
 }
-.nav-btn1 {
+.btn2 {
 	background: transparent;
 	font-size: 1rem;
 	padding: 1% 2% 1% 2%;
@@ -60,7 +60,7 @@ ul {
 	border-radius: 5px;
 	margin-left: 90%;
 	margin-top: 1%;
-	color: black;
+	color: white;
 	position: fixed;
 	z-index: 70;
 }
@@ -175,12 +175,12 @@ ul {
 /*Partnership*/
 
  #Partnership  {
- 	background: #E8E6E6;
+ 	background: #232222;
 
  }
 
  .heading3 {
- 	color: black;
+ 	color: white;
  	font-family: 'Montserrat', sans-serif;
  	text-align: center;
  }
@@ -192,7 +192,7 @@ ul {
 
  .text2 {
  	font-family: 'Comfortaa', cursive;
- 	color: #000;
+ 	color: #fff;
  	text-align: center;
  	margin-top: 4%;
  	margin-bottom: 2%;
@@ -202,7 +202,7 @@ ul {
  	background: transparent;
  	border: 2px solid #00FF7E;
  	border-radius: 10px;
- 	color: black;
+ 	color: white;
  	padding: 1% ;
  	margin-left: 45%;
  	font-family: 'Dancing Script', cursive;
@@ -212,6 +212,7 @@ ul {
 
   .sdg17:hover {
  	background: #00FF7E;
- 	color: black;
+ 	color: white;
  	transition: 0.3s ease-in;
  }
+

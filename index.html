@@ -15,17 +15,17 @@
 	<header>
 		<div class="nav" id="mynav">
 			<ul>
-				<a href="#home" class="link"><li class="item">Home</li></a>
-				<a href="#education" class="link"><li class="item">Education</li></a>
-				<a href="#peace" class="link"><li class="item">Peace</li></a>
-				<a href="#" class="link"><li class="item">Partnership</li></a>
+				<a href="#home" class="link" id="link"><li class="item">Home</li></a>
+				<a href="#education" class="link" id="link1"><li class="item">Education</li></a>
+				<a href="#peace" class="link" id="link2"><li class="item">Peace</li></a>
+				<a href="#" class="link" id="link3"><li class="item">Partnership</li></a>
 				
 
 				
 			</ul>
 		</div>
 	</header>
-	<button class="nav-btn">SDG</button>
+	<button class="nav-btn" id="btn1">SDG</button>
 		<div id="fullpage">
 			<div class="section" id="home">		
 			<h1 class="heading">Sustainable Development  Goals</h1>
@@ -73,9 +73,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js" integrity="sha512-GS3CSFQ4aj+0fL2a0wV1ouvpdbTZ3eEUriXTpXt50dc0CkO1fgyWuLoPA5NWy1PAWmcaZNneM+OAThgCqPnX+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
 		
+		
 		new fullpage ('#fullpage', {
 			autoScrolling:true,
-		})
+			scrollBar:true,
+		});
+		
 	</script>
+
+	<script src="main.js"></script>
 </body>
 </html>
