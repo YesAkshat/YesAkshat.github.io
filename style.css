@@ -1,0 +1,217 @@
+*,*::before,*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+/* font-family: 'Comfortaa', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/*Nav*/
+
+.link {
+	text-decoration: none;
+	color: black;
+
+}
+.link1 {
+ 	text-decoration: none;
+	color: white;
+}
+
+header {
+	margin-top: 2%;
+	position: fixed;
+	margin-left: 65%;
+	z-index: 70;
+
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	gap: 1rem;
+	font-family: 'Roboto', sans-serif; 
+}
+
+.nav-btn {
+	background: transparent;
+	font-size: 1rem;
+	padding: 1% 2% 1% 2%;
+	font-family: 'Roboto', sans-serif; 
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-left: 90%;
+	margin-top: 1%;
+	color: black;
+	position: fixed;
+	z-index: 70;
+}
+.nav-btn1 {
+	background: transparent;
+	font-size: 1rem;
+	padding: 1% 2% 1% 2%;
+	font-family: 'Roboto', sans-serif; 
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-left: 90%;
+	margin-top: 1%;
+	color: black;
+	position: fixed;
+	z-index: 70;
+}
+
+.nav-btn:hover
+ {
+ 	background: gray;
+ 	transition: 300ms ease-in;
+ }
+
+ /*Home*/
+
+ #home {
+ 	background: url('bg.jpg');
+ 	background-size: cover;
+
+ }
+
+ .heading {
+ 	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: white;
+ }
+ /*Education*/
+
+ #education {
+
+ 	background: black;
+ }
+
+ .heading1 {
+ 	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: white;
+
+ }
+
+ .content {
+ 	height: 500px;
+ 	min-height: -500px;
+ }
+
+ .text {
+ 	font-family: 'Comfortaa', cursive;
+ 	color: white;
+ 	text-align: center;
+ 	margin-top: 4%;
+ }
+ .container {
+ 	display: flex;
+ 	flex-direction: row;
+ 	margin-top: 5%;
+ }
+
+ .eduimage {
+ 	margin-left: 2%;
+ }
+
+ .sdg4 {
+ 	background: transparent;
+ 	border: 2px solid #00FF7E;
+ 	border-radius: 10px;
+ 	color: white;
+ 	padding: 1% ;
+ 	margin-left: 45%;
+ 	font-family: 'Dancing Script', cursive;
+ 	font-size: 1.3rem;
+ 	cursor: pointer;
+ }
+
+ .sdg4:hover {
+ 	background: #00FF7E;
+ 	color: black;
+ 	transition: 0.3s ease-in;
+ }
+
+ /*PEace*/
+
+ #peace {
+ 	background: #2f2e2e;
+ }
+
+ .heading2 {
+ 	color: white;
+ 	font-family: 'Montserrat', sans-serif;
+ 	text-align: center;
+ }
+
+ .content1 {
+ 	height: 500px;
+ 	min-height: -500px;
+ }
+
+ .text1 {
+ 	font-family: 'Comfortaa', cursive;
+ 	color: white;
+ 	text-align: center;
+ 	margin-top: 4%;
+ 	margin-bottom: 2%;
+ }
+
+ .container1 {
+ 	display: flex;
+ 	flex-direction: row;
+ 	margin-top: 5%;
+ }
+
+ .pimage {
+ 	margin-left: 2%;
+ }
+
+/*Partnership*/
+
+ #Partnership  {
+ 	background: #E8E6E6;
+
+ }
+
+ .heading3 {
+ 	color: black;
+ 	font-family: 'Montserrat', sans-serif;
+ 	text-align: center;
+ }
+
+ .content2 {
+ 	height: 500px;
+ 	min-height: -500px;
+ }
+
+ .text2 {
+ 	font-family: 'Comfortaa', cursive;
+ 	color: #000;
+ 	text-align: center;
+ 	margin-top: 4%;
+ 	margin-bottom: 2%;
+ }
+
+ .sdg17 {
+ 	background: transparent;
+ 	border: 2px solid #00FF7E;
+ 	border-radius: 10px;
+ 	color: black;
+ 	padding: 1% ;
+ 	margin-left: 45%;
+ 	font-family: 'Dancing Script', cursive;
+ 	font-size: 1.3rem;
+ 	cursor: pointer;
+ }
+
+  .sdg17:hover {
+ 	background: #00FF7E;
+ 	color: black;
+ 	transition: 0.3s ease-in;
+ }
