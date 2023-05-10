@@ -1,218 +1,299 @@
-*,*::before,*::after {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
+	
 }
+
+
 /* font-family: 'Comfortaa', cursive;
-font-family: 'Dancing Script', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-/*Nav*/
 
-.link {
-	text-decoration: none;
-	color: black;
-
-}
-.fix {
- 	text-decoration: none;
-	color: white;
+#home {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-header {
-	margin-top: 2%;
-	position: fixed;
-	margin-left: 65%;
-	z-index: 70;
+
+.me  {
+	width: 15%;
+	height: 30%;
+	border-radius: 50%;
+	/* margin-left: 43%;
+	margin-top: 12.5%;
+ */}
+
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	margin-top: 1.5%;
 
 }
 
-ul {
+.intro {
+	font-size: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.cv {
+	width: 10%;
+	padding: 1% 1% 1% 1%;
+	margin-top: 3%;
+	margin-left: -15%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	transition: all 300ms ease-in-out;
+}
+
+.About {
+	width: 10%;
+	padding: 1% 1% 1% 1%;
+	margin-top: -4.3%;
+	margin-left: 15%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	transition: all 300ms ease-in-out;
+
+}
+
+.text {
+	font-size: 1.5rem;
+}
+
+#About {
+	height: 100vh;
+}
+
+.about {
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding-top: 5%;
+}
+.line {
+	background: white;
+	width: auto;
+	height: 0.2vh;
+
+}
+
+.line1 {
+	background: white;
+	width: auto;
+	height: 0.2vh;
+	margin-top: 25%;
+}
+
+
+.content {
+	width: 70%;
+	height: 60vh;
+	border-radius: 15px;
+	margin-left: 15%;
+	margin-top: 3%;
 	display: flex;
 	flex-direction: row;
-	list-style-type: none;
-	gap: 1rem;
-	font-family: 'Roboto', sans-serif; 
+	gap: 2rem;
+	align-items: center;
 }
 
-.nav-btn {
-	background: transparent;
-	font-size: 1rem;
-	padding: 1% 2% 1% 2%;
-	font-family: 'Roboto', sans-serif; 
-	border: 2px solid black;
-	border-radius: 5px;
-	margin-left: 90%;
-	margin-top: 1%;
-	color: black;
-	position: fixed;
-	z-index: 70;
-}
-.btn2 {
-	background: transparent;
-	font-size: 1rem;
-	padding: 1% 2% 1% 2%;
-	font-family: 'Roboto', sans-serif; 
-	border: 2px solid white;
-	border-radius: 5px;
-	margin-left: 90%;
-	margin-top: 1%;
+
+.blink {
 	color: white;
-	position: fixed;
-	z-index: 70;
+	text-decoration: none;
+
 }
 
-.nav-btn:hover
- {
- 	background: gray;
- 	transition: 300ms ease-in;
- }
+.description {
+	color: white;
+	font-size: 1.3rem;
+	font-family: 'Poppins', sans-serif;
 
- /*Home*/
+}
 
- #home {
- 	background: url('bg.jpg');
- 	background-size: cover;
+.myface {
+	width: 35%;
+	margin-left: 3%;
+}
 
- }
+#Works {
+	height: 100vh;
+}
 
- .heading {
- 	font-family: 'Montserrat', sans-serif;
+.works {
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
-	color: white;
- }
- /*Education*/
+	padding-top: 5%;
+}
+.card {
+  margin-top: 30px;
+  margin-left: 5%;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  padding-bottom: 15%;
+}
 
- #education {
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
 
- 	background: black;
- }
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
 
- .heading1 {
- 	font-family: 'Montserrat', sans-serif;
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+
+.card1 {
+  margin-top: -37.5%;
+  margin-left: 35%;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  padding-bottom: 15%;
+}
+
+.card1 .card1_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card1 .card1_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card1 .card1_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card1:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+
+.card2 {
+  margin-top:-23.5%;
+  margin-left: 65%;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  padding-bottom: 15%;
+}
+
+.card2 .card2_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card2 .card2_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card2 .card2_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card2:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+#awards {
+	width: 100%;
+	height: 100vh;
+
+}
+
+.imglink {
+	width: inherit;
+	height: inherit;
+
+}
+
+.cert {
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
+	padding-top: 5%;
 	color: white;
 
- }
+}
 
- .content {
- 	height: 500px;
- 	min-height: -500px;
- }
-
- .text {
- 	font-family: 'Comfortaa', cursive;
- 	color: white;
- 	text-align: center;
- 	margin-top: 4%;
- }
- .container {
- 	display: flex;
- 	flex-direction: row;
- 	margin-top: 5%;
- }
-
- .eduimage {
- 	margin-left: 2%;
- }
-
- .sdg4 {
- 	background: transparent;
- 	border: 2px solid #00FF7E;
- 	border-radius: 10px;
- 	color: white;
- 	padding: 1% ;
- 	margin-left: 45%;
- 	font-family: 'Dancing Script', cursive;
- 	font-size: 1.3rem;
- 	cursor: pointer;
- }
-
- .sdg4:hover {
- 	background: #00FF7E;
- 	color: black;
- 	transition: 0.3s ease-in;
- }
-
- /*PEace*/
-
- #peace {
- 	background: #2f2e2e;
- }
-
- .heading2 {
- 	color: white;
- 	font-family: 'Montserrat', sans-serif;
- 	text-align: center;
- }
-
- .content1 {
- 	height: 500px;
- 	min-height: -500px;
- }
-
- .text1 {
- 	font-family: 'Comfortaa', cursive;
- 	color: white;
- 	text-align: center;
- 	margin-top: 4%;
- 	margin-bottom: 2%;
- }
-
- .container1 {
- 	display: flex;
- 	flex-direction: row;
- 	margin-top: 5%;
- }
-
- .pimage {
- 	margin-left: 2%;
- }
-
-/*Partnership*/
-
- #Partnership  {
- 	background: #232222;
-
- }
-
- .heading3 {
- 	color: white;
- 	font-family: 'Montserrat', sans-serif;
- 	text-align: center;
- }
-
- .content2 {
- 	height: 500px;
- 	min-height: -500px;
- }
-
- .text2 {
- 	font-family: 'Comfortaa', cursive;
- 	color: #fff;
- 	text-align: center;
- 	margin-top: 4%;
- 	margin-bottom: 2%;
- }
-
- .sdg17 {
- 	background: transparent;
- 	border: 2px solid #00FF7E;
- 	border-radius: 10px;
- 	color: white;
- 	padding: 1% ;
- 	margin-left: 45%;
- 	font-family: 'Dancing Script', cursive;
- 	font-size: 1.3rem;
- 	cursor: pointer;
- }
-
-  .sdg17:hover {
- 	background: #00FF7E;
- 	color: white;
- 	transition: 0.3s ease-in;
- }
-
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
