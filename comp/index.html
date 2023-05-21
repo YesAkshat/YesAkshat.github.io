@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Competition</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coming+Soon&family=Montserrat&family=Montserrat+Alternates&family=Open+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css" integrity="sha512-DbP1b6q56Ud5q0L+lvw9COyyH/+pN1lVmySvun4UsH8vmfdIHou+PAHfMnGXf6Fvd9rYLjSojeuPhQz2euU1cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<div id="fullpage">
+		<div class="section dark:bg-black" id="home"> 
+
+			<!-- Photo by <a href="https://unsplash.com/@beingaheart?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AaDil</a> on <a href="https://unsplash.com/s/photos/ipl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+			<div class="content1">
+  		<h1 class="heading">Building <span class="text">the Future</span></h1>
+  		<h2 class="text1">
+  			The product which will revolutanize the way ipl is played and<br> enjoyed
+  			see the records and create a team to change the game.
+  		</h2>	
+  		<button class="view">
+  			View our Product
+  		</button>
+  	</div>
+  		
+
+
+		</div>
+		
+
+		<div class="section dark:bg-gray-900" id="about">
+			<div class="content">
+			<h1 class="heading1">Introducing</h1>
+
+			<video width="35%" height="40%" controls class="ipl">
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+		</div>
+		</div>
+		<div class="section dark:bg-gray-800">
+			<div class="content">
+			<h1 class="heading2">
+				Product
+			</h1>
+
+			<div class="container">
+			<img src="
+			ipl.jpg " alt="Image" class="image">
+			<p class="description">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptate rem fuga nam animi iste ad porro, hic officia reprehenderit sunt id blanditiis pariatur adipisci, consequatur, ullam sed fugiat maxime veritatis exercitationem? Nostrum corrupti, voluptates non vel, officia quasi architecto optio quas aliquid porro sit! Quas, magni labore vero dignissimos.
+			</p>
+		</div>
+		</div>
+		</div>
+		<div class="section dark:bg-gray-700" id="teams">
+			<!-- Photo by <a href="https://unsplash.com/@litchland_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lochie Blanch</a> on <a href="https://unsplash.com/s/photos/bat-ball?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+			<!-- Photo by <a href="https://unsplash.com/@chris_chow?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Chow</a> on <a href="https://unsplash.com/s/photos/bat-ball?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+			<!-- Photo by <a href="https://unsplash.com/@jonathanborba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan Borba</a> on <a href="https://unsplash.com/s/photos/bat-ball?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+
+			<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+				<img src="sa.jpg" alt="" class="animage"draggable="false">
+				<img src="sa.jpg" alt="" class="animage"draggable="false">
+				<img src="sa.jpg" alt="" class="animage"draggable="false">
+				<img src="sa.jpg" alt="" class="animage"draggable="false">
+				<img src="sa.jpg" alt="" class="animage"draggable="false">
+				<img src="sa.jpg" alt="" class="animage"draggable="false">
+				<img src="sa.jpg" alt="" class="animage"draggable="false">
+
+			</div>
+  
+  
+  
+		</div>
+	</div>
+	
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js" integrity="sha512-GS3CSFQ4aj+0fL2a0wV1ouvpdbTZ3eEUriXTpXt50dc0CkO1fgyWuLoPA5NWy1PAWmcaZNneM+OAThgCqPnX+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<script>
+			new fullpage('#fullpage', {
+	
+	autoScrolling:true,
+	
+	navigation: true,
+	navigationTooltips: ['Home', 'Intro', 'Product'],
+	showActiveTooltip: true,
+	
+});
+
+		const track = document.getElementById("image-track");
+
+const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+const handleOnUp = () => {
+  track.dataset.mouseDownAt = "0";  
+  track.dataset.prevPercentage = track.dataset.percentage;
+}
+
+const handleOnMove = e => {
+  if(track.dataset.mouseDownAt === "0") return;
+  
+  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+  
+  const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+  
+  track.dataset.percentage = nextPercentage;
+  
+  track.animate({
+    transform: `translate(${nextPercentage}%, -50%)`
+  }, { duration: 1200, fill: "forwards" });
+  
+  for(const image of track.getElementsByClassName("animage")) {
+    image.animate({
+      objectPosition: `${100 + nextPercentage}% center`
+    }, { duration: 1200, fill: "forwards" });
+  }
+}
+
+/* -- Had to add extra lines for touch events -- */
+
+window.onmousedown = e => handleOnDown(e);
+
+window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+window.onmouseup = e => handleOnUp(e);
+
+window.ontouchend = e => handleOnUp(e.touches[0]);
+
+window.onmousemove = e => handleOnMove(e);
+
+window.ontouchmove = e => handleOnMove(e.touches[0]);
+		</script>
+		
+</body>
+</html>
